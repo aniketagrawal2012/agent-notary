@@ -1,0 +1,1001 @@
+trace_id,cohort,is_adversarial,detected,error_reason,notarize_latency_us,verify_latency_us,header_size_bytes
+trace-0000,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,132.12,4.67,1380
+trace-0001,benign_valid,False,False,VALID,124.58,10.46,1476
+trace-0002,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,61.17,3.12,1556
+trace-0003,benign_valid,False,False,VALID,52.0,9.79,1572
+trace-0004,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,54.29,2.5,1672
+trace-0005,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,57.38,2.42,1652
+trace-0006,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,51.79,0.42,1672
+trace-0007,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,51.92,2.42,1672
+trace-0008,benign_valid,False,False,VALID,54.33,9.08,1752
+trace-0009,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,55.58,2.29,1768
+trace-0010,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,56.33,0.33,1772
+trace-0011,benign_valid,False,False,VALID,56.54,8.79,1748
+trace-0012,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,57.42,2.42,1768
+trace-0013,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,59.17,2.67,1772
+trace-0014,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,61.83,0.17,1752
+trace-0015,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,59.17,4.0,1768
+trace-0016,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,65.25,2.12,1868
+trace-0017,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,62.96,3.58,1852
+trace-0018,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,64.88,0.17,1868
+trace-0019,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,63.33,0.08,1868
+trace-0020,benign_valid,False,False,VALID,71.33,8.83,1848
+trace-0021,benign_valid,False,False,VALID,67.21,8.62,1868
+trace-0022,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,67.67,2.17,1868
+trace-0023,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,67.83,2.25,1852
+trace-0024,benign_valid,False,False,VALID,72.0,26.67,1868
+trace-0025,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,171.71,5.12,1868
+trace-0026,benign_valid,False,False,VALID,97.33,9.83,1852
+trace-0027,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,85.67,2.58,1868
+trace-0028,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,86.62,4.04,1868
+trace-0029,benign_valid,False,False,VALID,81.96,9.04,1848
+trace-0030,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,83.92,0.17,1864
+trace-0031,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,81.38,0.12,1864
+trace-0032,benign_valid,False,False,VALID,91.75,9.62,1948
+trace-0033,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,94.58,2.42,1964
+trace-0034,benign_valid,False,False,VALID,91.0,9.54,1964
+trace-0035,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,91.29,0.08,1948
+trace-0036,benign_valid,False,False,VALID,91.0,9.12,1964
+trace-0037,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,90.38,3.5,1964
+trace-0038,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,92.08,3.71,1948
+trace-0039,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,91.46,3.75,1964
+trace-0040,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,99.54,2.25,1964
+trace-0041,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,99.21,3.92,1948
+trace-0042,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,151.75,7.04,1964
+trace-0043,benign_valid,False,False,VALID,128.67,11.0,1964
+trace-0044,benign_valid,False,False,VALID,115.62,10.0,1948
+trace-0045,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,109.0,0.21,1964
+trace-0046,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,166.71,3.67,1964
+trace-0047,benign_valid,False,False,VALID,126.75,10.83,1948
+trace-0048,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,114.42,2.42,1964
+trace-0049,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,113.42,3.96,1964
+trace-0050,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,109.25,3.54,1948
+trace-0051,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,107.12,2.25,1964
+trace-0052,benign_valid,False,False,VALID,110.96,9.58,1964
+trace-0053,benign_valid,False,False,VALID,114.5,9.12,1944
+trace-0054,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,110.46,0.21,1964
+trace-0055,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,113.17,3.67,1964
+trace-0056,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,112.54,0.12,1948
+trace-0057,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,112.71,3.75,1964
+trace-0058,benign_valid,False,False,VALID,115.54,9.04,1964
+trace-0059,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,115.67,3.71,1948
+trace-0060,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,120.08,0.08,1964
+trace-0061,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,120.92,3.67,1964
+trace-0062,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,122.46,0.08,1948
+trace-0063,benign_valid,False,False,VALID,121.5,9.21,1964
+trace-0064,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,134.0,0.21,2064
+trace-0065,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,138.29,2.38,2044
+trace-0066,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,131.92,2.33,2060
+trace-0067,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,131.75,3.67,2064
+trace-0068,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,133.92,3.75,2044
+trace-0069,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,138.58,2.29,2060
+trace-0070,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,135.25,2.21,2064
+trace-0071,benign_valid,False,False,VALID,143.21,10.12,2044
+trace-0072,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,138.0,0.17,2060
+trace-0073,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,140.62,0.12,2064
+trace-0074,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,144.25,2.38,2044
+trace-0075,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,140.42,2.17,2060
+trace-0076,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,149.96,4.17,2064
+trace-0077,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,151.29,3.54,2044
+trace-0078,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,144.25,2.17,2060
+trace-0079,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,138.25,2.17,2064
+trace-0080,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,143.71,3.54,2044
+trace-0081,benign_valid,False,False,VALID,144.83,9.62,2060
+trace-0082,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,142.67,3.42,2064
+trace-0083,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,142.79,2.21,2044
+trace-0084,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,143.42,2.17,2060
+trace-0085,benign_valid,False,False,VALID,146.21,9.25,2064
+trace-0086,benign_valid,False,False,VALID,147.88,9.12,2044
+trace-0087,benign_valid,False,False,VALID,146.04,8.83,2060
+trace-0088,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,256.29,10.62,2064
+trace-0089,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,268.62,4.38,2044
+trace-0090,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,197.54,0.17,2064
+trace-0091,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,198.58,2.12,2064
+trace-0092,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,153.17,0.17,2044
+trace-0093,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,154.54,2.29,2064
+trace-0094,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,169.46,0.08,2064
+trace-0095,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,163.75,2.17,2044
+trace-0096,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,159.17,2.17,2060
+trace-0097,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,162.38,6.38,2060
+trace-0098,benign_valid,False,False,VALID,175.08,9.5,2044
+trace-0099,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,175.21,0.08,2064
+trace-0100,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,165.75,2.12,2064
+trace-0101,benign_valid,False,False,VALID,164.46,9.21,2044
+trace-0102,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,166.08,2.04,2064
+trace-0103,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,167.21,0.12,2064
+trace-0104,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,174.29,2.25,2044
+trace-0105,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,171.75,3.54,2064
+trace-0106,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,170.12,2.21,2060
+trace-0107,benign_valid,False,False,VALID,170.62,9.46,2044
+trace-0108,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,174.62,3.38,2064
+trace-0109,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,187.75,2.12,2064
+trace-0110,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,198.08,0.08,2044
+trace-0111,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,195.0,0.17,2064
+trace-0112,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,180.54,2.38,2064
+trace-0113,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,175.67,0.12,2044
+trace-0114,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,176.12,0.08,2060
+trace-0115,benign_valid,False,False,VALID,180.12,9.25,2064
+trace-0116,benign_valid,False,False,VALID,179.04,8.92,2044
+trace-0117,benign_valid,False,False,VALID,183.21,8.79,2060
+trace-0118,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,176.62,0.12,2064
+trace-0119,benign_valid,False,False,VALID,179.58,8.79,2044
+trace-0120,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,182.33,2.04,2064
+trace-0121,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,181.0,2.08,2064
+trace-0122,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,183.29,0.12,2048
+trace-0123,benign_valid,False,False,VALID,181.29,8.75,2064
+trace-0124,benign_valid,False,False,VALID,185.88,8.67,2064
+trace-0125,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,184.71,2.08,2048
+trace-0126,benign_valid,False,False,VALID,184.96,8.62,2064
+trace-0127,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,205.54,2.04,2064
+trace-0128,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,223.67,2.0,2144
+trace-0129,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,194.17,0.08,2160
+trace-0130,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,195.79,0.08,2160
+trace-0131,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,196.79,2.04,2144
+trace-0132,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,210.67,12.21,2160
+trace-0133,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,340.83,0.29,2160
+trace-0134,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,253.08,2.92,2144
+trace-0135,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,220.0,2.29,2160
+trace-0136,benign_valid,False,False,VALID,315.92,12.79,2164
+trace-0137,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,277.75,0.33,2144
+trace-0138,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,251.79,2.29,2160
+trace-0139,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,203.67,3.54,2160
+trace-0140,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,206.21,3.33,2144
+trace-0141,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,205.71,2.08,2160
+trace-0142,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,207.54,0.17,2160
+trace-0143,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,223.38,3.58,2144
+trace-0144,benign_valid,False,False,VALID,227.92,9.83,2160
+trace-0145,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,209.92,0.08,2160
+trace-0146,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,211.42,0.08,2144
+trace-0147,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,214.46,2.12,2160
+trace-0148,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,213.96,2.08,2160
+trace-0149,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,215.04,2.04,2144
+trace-0150,benign_valid,False,False,VALID,215.29,9.25,2160
+trace-0151,benign_valid,False,False,VALID,217.58,8.92,2160
+trace-0152,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,218.62,3.29,2140
+trace-0153,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,218.04,2.12,2160
+trace-0154,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,221.42,0.12,2160
+trace-0155,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,220.29,2.08,2144
+trace-0156,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,226.71,2.08,2160
+trace-0157,benign_valid,False,False,VALID,223.75,9.29,2164
+trace-0158,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,223.12,2.12,2144
+trace-0159,benign_valid,False,False,VALID,225.96,9.08,2160
+trace-0160,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,233.0,2.04,2160
+trace-0161,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,230.0,0.12,2144
+trace-0162,benign_valid,False,False,VALID,232.17,9.29,2160
+trace-0163,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,232.21,0.17,2160
+trace-0164,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,232.08,0.04,2144
+trace-0165,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,231.67,0.08,2160
+trace-0166,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,233.42,0.08,2160
+trace-0167,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,344.79,4.0,2144
+trace-0168,benign_valid,False,False,VALID,241.67,9.33,2160
+trace-0169,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,239.79,3.58,2160
+trace-0170,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,310.38,2.12,2144
+trace-0171,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,245.5,2.12,2160
+trace-0172,benign_valid,False,False,VALID,241.71,9.42,2160
+trace-0173,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,247.38,2.08,2144
+trace-0174,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,242.79,3.29,2160
+trace-0175,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,245.58,2.0,2160
+trace-0176,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,248.62,0.12,2144
+trace-0177,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,247.75,0.08,2160
+trace-0178,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,250.46,2.08,2160
+trace-0179,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,249.0,3.46,2144
+trace-0180,benign_valid,False,False,VALID,252.0,9.25,2160
+trace-0181,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,250.71,2.04,2160
+trace-0182,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,256.12,2.17,2144
+trace-0183,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,253.79,0.08,2160
+trace-0184,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,256.58,0.04,2160
+trace-0185,benign_valid,False,False,VALID,254.12,9.38,2144
+trace-0186,benign_valid,False,False,VALID,264.75,9.08,2160
+trace-0187,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,262.42,2.08,2160
+trace-0188,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,261.42,2.08,2144
+trace-0189,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,260.88,0.08,2160
+trace-0190,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,260.79,3.38,2160
+trace-0191,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,264.25,0.08,2144
+trace-0192,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,265.88,0.12,2160
+trace-0193,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,274.21,0.12,2160
+trace-0194,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,279.21,0.08,2140
+trace-0195,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,279.38,2.12,2156
+trace-0196,benign_valid,False,False,VALID,269.62,9.46,2160
+trace-0197,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,271.62,2.04,2144
+trace-0198,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,272.29,3.42,2160
+trace-0199,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,277.29,2.0,2160
+trace-0200,benign_valid,False,False,VALID,273.38,9.33,2140
+trace-0201,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,273.46,3.42,2160
+trace-0202,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,278.54,3.25,2160
+trace-0203,benign_valid,False,False,VALID,376.33,17.33,2144
+trace-0204,benign_valid,False,False,VALID,357.04,10.62,2160
+trace-0205,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,306.71,2.21,2164
+trace-0206,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,298.75,0.25,2144
+trace-0207,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,347.17,6.67,2160
+trace-0208,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,382.92,6.92,2160
+trace-0209,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,305.04,2.17,2144
+trace-0210,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,290.67,3.58,2160
+trace-0211,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,292.46,3.29,2160
+trace-0212,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,291.21,2.04,2144
+trace-0213,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,288.71,2.04,2160
+trace-0214,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,294.71,0.17,2160
+trace-0215,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,300.83,2.08,2140
+trace-0216,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,294.5,2.0,2160
+trace-0217,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,294.54,2.0,2160
+trace-0218,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,295.33,2.12,2144
+trace-0219,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,302.58,1.96,2160
+trace-0220,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,300.5,2.04,2160
+trace-0221,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,299.33,2.04,2144
+trace-0222,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,348.21,2.04,2160
+trace-0223,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,313.75,2.0,2160
+trace-0224,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,307.67,2.33,2144
+trace-0225,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,316.04,0.12,2160
+trace-0226,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,308.67,3.54,2160
+trace-0227,benign_valid,False,False,VALID,315.17,9.62,2144
+trace-0228,benign_valid,False,False,VALID,311.96,9.42,2160
+trace-0229,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,308.42,3.25,2160
+trace-0230,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,306.21,0.12,2144
+trace-0231,benign_valid,False,False,VALID,317.29,9.38,2160
+trace-0232,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,475.08,4.04,2160
+trace-0233,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,363.5,4.88,2140
+trace-0234,benign_valid,False,False,VALID,335.83,10.79,2160
+trace-0235,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,354.29,2.54,2160
+trace-0236,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,358.08,2.21,2144
+trace-0237,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,344.54,3.83,2160
+trace-0238,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,458.88,4.54,2160
+trace-0239,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,377.38,2.92,2144
+trace-0240,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,352.75,0.21,2160
+trace-0241,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,356.79,0.17,2160
+trace-0242,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,349.17,0.17,2144
+trace-0243,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,527.96,7.04,2164
+trace-0244,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,384.75,2.38,2164
+trace-0245,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,345.88,4.17,2140
+trace-0246,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,333.54,2.21,2160
+trace-0247,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,340.42,2.08,2160
+trace-0248,benign_valid,False,False,VALID,342.58,10.46,2144
+trace-0249,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,337.92,0.17,2160
+trace-0250,benign_valid,False,False,VALID,338.0,9.71,2160
+trace-0251,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,399.17,3.21,2144
+trace-0252,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,376.75,4.08,2160
+trace-0253,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,351.42,2.17,2160
+trace-0254,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,345.12,2.12,2144
+trace-0255,benign_valid,False,False,VALID,347.29,10.25,2160
+trace-0256,benign_valid,False,False,VALID,564.67,22.42,2260
+trace-0257,benign_valid,False,False,VALID,417.25,10.46,2244
+trace-0258,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,361.42,0.25,2256
+trace-0259,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,395.17,0.17,2260
+trace-0260,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,372.25,4.08,2240
+trace-0261,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,364.29,2.08,2256
+trace-0262,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,384.21,3.92,2256
+trace-0263,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,453.92,5.21,2240
+trace-0264,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,407.04,3.96,2256
+trace-0265,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,376.88,2.17,2260
+trace-0266,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,366.79,2.25,2240
+trace-0267,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,359.04,2.21,2256
+trace-0268,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,358.42,0.17,2260
+trace-0269,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,369.58,2.58,2240
+trace-0270,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,367.75,2.08,2256
+trace-0271,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,369.08,3.58,2260
+trace-0272,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,370.04,2.04,2240
+trace-0273,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,363.04,0.12,2256
+trace-0274,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,370.0,0.12,2260
+trace-0275,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,381.12,0.08,2240
+trace-0276,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,370.08,2.17,2256
+trace-0277,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,368.29,0.12,2260
+trace-0278,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,365.96,3.5,2236
+trace-0279,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,480.88,0.29,2260
+trace-0280,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,459.96,5.67,2260
+trace-0281,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,447.62,3.29,2240
+trace-0282,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,479.5,0.08,2256
+trace-0283,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,391.17,2.08,2256
+trace-0284,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,379.21,2.17,2240
+trace-0285,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,379.67,2.12,2256
+trace-0286,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,376.21,2.04,2260
+trace-0287,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,378.21,3.58,2240
+trace-0288,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,389.04,3.38,2256
+trace-0289,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,383.75,2.04,2260
+trace-0290,benign_valid,False,False,VALID,382.08,10.25,2236
+trace-0291,benign_valid,False,False,VALID,379.25,9.79,2256
+trace-0292,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,386.88,0.12,2260
+trace-0293,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,420.54,2.17,2240
+trace-0294,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,414.96,2.0,2256
+trace-0295,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,393.79,3.62,2260
+trace-0296,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,418.96,0.17,2240
+trace-0297,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,416.33,2.12,2256
+trace-0298,benign_valid,False,False,VALID,405.83,10.0,2260
+trace-0299,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,410.75,2.17,2240
+trace-0300,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,413.58,3.54,2256
+trace-0301,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,410.17,2.21,2260
+trace-0302,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,414.17,0.08,2240
+trace-0303,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,409.67,2.12,2256
+trace-0304,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,406.83,3.58,2256
+trace-0305,benign_valid,False,False,VALID,403.33,9.88,2240
+trace-0306,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,433.38,4.0,2256
+trace-0307,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,411.54,2.25,2256
+trace-0308,benign_valid,False,False,VALID,412.79,10.08,2240
+trace-0309,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,414.29,3.54,2256
+trace-0310,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,417.12,3.42,2260
+trace-0311,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,415.71,2.17,2240
+trace-0312,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,418.29,3.58,2256
+trace-0313,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,422.67,2.04,2260
+trace-0314,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,416.83,0.12,2240
+trace-0315,benign_valid,False,False,VALID,418.58,9.88,2256
+trace-0316,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,418.58,2.12,2260
+trace-0317,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,420.88,0.08,2240
+trace-0318,benign_valid,False,False,VALID,424.25,9.88,2256
+trace-0319,benign_valid,False,False,VALID,443.88,9.79,2260
+trace-0320,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,446.17,2.12,2240
+trace-0321,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,427.96,2.12,2256
+trace-0322,benign_valid,False,False,VALID,434.17,9.71,2260
+trace-0323,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,561.83,4.08,2240
+trace-0324,benign_valid,False,False,VALID,539.08,12.67,2260
+trace-0325,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,525.17,4.54,2260
+trace-0326,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,508.04,0.12,2236
+trace-0327,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,445.54,0.08,2256
+trace-0328,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,454.83,3.62,2260
+trace-0329,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,469.5,3.71,2240
+trace-0330,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,434.38,0.08,2256
+trace-0331,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,449.67,0.12,2260
+trace-0332,benign_valid,False,False,VALID,465.33,13.25,2240
+trace-0333,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,449.83,2.21,2256
+trace-0334,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,444.17,0.12,2260
+trace-0335,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,457.67,3.83,2240
+trace-0336,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,457.17,2.08,2256
+trace-0337,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,452.21,2.0,2260
+trace-0338,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,444.17,3.46,2240
+trace-0339,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,449.5,1.92,2256
+trace-0340,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,452.96,2.08,2260
+trace-0341,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,560.83,2.12,2240
+trace-0342,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,457.17,3.58,2256
+trace-0343,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,744.58,8.92,2260
+trace-0344,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,606.0,3.92,2240
+trace-0345,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,486.25,2.08,2256
+trace-0346,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,466.12,0.12,2260
+trace-0347,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,514.83,3.46,2240
+trace-0348,benign_valid,False,False,VALID,490.46,10.12,2256
+trace-0349,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,476.08,3.46,2256
+trace-0350,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,464.0,0.12,2240
+trace-0351,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,533.5,6.83,2256
+trace-0352,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,509.42,2.5,2260
+trace-0353,benign_valid,False,False,VALID,492.38,11.12,2240
+trace-0354,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,481.46,2.38,2256
+trace-0355,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,477.79,4.29,2256
+trace-0356,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,487.5,2.29,2240
+trace-0357,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,483.67,2.17,2256
+trace-0358,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,476.88,2.08,2260
+trace-0359,benign_valid,False,False,VALID,480.42,10.38,2240
+trace-0360,benign_valid,False,False,VALID,511.62,10.04,2256
+trace-0361,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,696.5,4.21,2256
+trace-0362,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,629.83,0.21,2240
+trace-0363,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,574.67,5.12,2260
+trace-0364,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,525.08,4.12,2260
+trace-0365,benign_valid,False,False,VALID,517.79,10.21,2240
+trace-0366,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,484.46,2.12,2256
+trace-0367,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,487.08,6.54,2256
+trace-0368,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,497.17,0.08,2240
+trace-0369,benign_valid,False,False,VALID,486.25,9.88,2256
+trace-0370,benign_valid,False,False,VALID,492.38,9.58,2260
+trace-0371,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,481.75,3.33,2240
+trace-0372,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,497.25,0.08,2256
+trace-0373,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,509.29,2.29,2260
+trace-0374,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,519.25,2.17,2240
+trace-0375,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,546.42,3.62,2256
+trace-0376,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,495.0,2.12,2256
+trace-0377,benign_valid,False,False,VALID,551.29,10.08,2240
+trace-0378,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,535.88,8.04,2256
+trace-0379,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,657.75,0.29,2260
+trace-0380,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,623.0,0.25,2240
+trace-0381,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,587.46,3.71,2256
+trace-0382,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,509.38,3.58,2260
+trace-0383,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,508.58,0.12,2240
+trace-0384,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,526.54,0.12,2256
+trace-0385,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,512.04,3.54,2260
+trace-0386,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,503.29,3.54,2240
+trace-0387,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,507.88,3.42,2260
+trace-0388,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,521.12,0.17,2260
+trace-0389,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,538.38,2.12,2240
+trace-0390,benign_valid,False,False,VALID,536.83,25.67,2256
+trace-0391,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,554.58,0.12,2260
+trace-0392,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,520.75,2.17,2240
+trace-0393,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,519.46,3.42,2256
+trace-0394,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,523.5,2.0,2260
+trace-0395,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,524.46,2.12,2240
+trace-0396,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,529.92,0.12,2256
+trace-0397,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,528.58,3.5,2260
+trace-0398,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,531.75,3.54,2240
+trace-0399,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,523.08,3.42,2260
+trace-0400,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,543.12,2.21,2260
+trace-0401,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,531.46,2.04,2240
+trace-0402,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,527.04,2.12,2256
+trace-0403,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,553.46,0.12,2260
+trace-0404,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,578.79,2.25,2240
+trace-0405,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,559.25,3.58,2256
+trace-0406,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,534.71,3.33,2260
+trace-0407,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,535.62,2.04,2240
+trace-0408,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,539.42,0.04,2256
+trace-0409,benign_valid,False,False,VALID,548.25,9.79,2260
+trace-0410,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,539.38,2.08,2240
+trace-0411,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,550.92,2.04,2256
+trace-0412,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,538.62,2.17,2260
+trace-0413,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,730.46,4.38,2240
+trace-0414,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,681.92,2.12,2260
+trace-0415,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,552.38,2.04,2260
+trace-0416,benign_valid,False,False,VALID,555.08,10.04,2240
+trace-0417,benign_valid,False,False,VALID,577.04,9.71,2256
+trace-0418,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,600.54,0.12,2260
+trace-0419,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,569.62,2.21,2240
+trace-0420,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,553.62,3.58,2256
+trace-0421,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,547.96,0.17,2260
+trace-0422,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,560.83,2.12,2240
+trace-0423,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,560.0,2.0,2256
+trace-0424,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,571.5,3.58,2260
+trace-0425,benign_valid,False,False,VALID,558.75,9.92,2240
+trace-0426,benign_valid,False,False,VALID,559.54,9.62,2256
+trace-0427,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,570.79,2.17,2260
+trace-0428,benign_valid,False,False,VALID,561.62,9.71,2240
+trace-0429,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,755.79,6.88,2256
+trace-0430,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,747.96,0.29,2260
+trace-0431,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,627.5,2.62,2240
+trace-0432,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,648.58,4.58,2256
+trace-0433,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,638.88,4.79,2260
+trace-0434,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,686.42,3.88,2240
+trace-0435,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,580.79,0.08,2256
+trace-0436,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,578.79,2.08,2260
+trace-0437,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,583.04,0.08,2240
+trace-0438,benign_valid,False,False,VALID,622.58,10.25,2256
+trace-0439,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,590.79,2.0,2260
+trace-0440,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,584.67,2.08,2240
+trace-0441,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,575.92,0.08,2256
+trace-0442,benign_valid,False,False,VALID,582.25,9.75,2260
+trace-0443,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,577.88,2.08,2240
+trace-0444,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,756.0,3.58,2256
+trace-0445,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,675.79,2.29,2256
+trace-0446,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,623.17,0.17,2240
+trace-0447,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,698.29,0.38,2256
+trace-0448,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,746.38,5.54,2260
+trace-0449,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,637.83,2.96,2240
+trace-0450,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,631.88,0.17,2256
+trace-0451,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,611.29,2.46,2260
+trace-0452,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,706.08,3.88,2240
+trace-0453,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,610.29,3.58,2256
+trace-0454,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,606.62,2.08,2260
+trace-0455,benign_valid,False,False,VALID,636.29,9.92,2240
+trace-0456,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,602.12,0.12,2256
+trace-0457,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,605.17,2.08,2260
+trace-0458,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,780.38,0.25,2240
+trace-0459,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,711.5,2.17,2256
+trace-0460,benign_valid,False,False,VALID,612.5,9.96,2260
+trace-0461,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,607.33,2.0,2240
+trace-0462,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,612.04,0.12,2256
+trace-0463,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,605.58,0.08,2256
+trace-0464,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,613.92,2.12,2240
+trace-0465,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,616.42,2.17,2256
+trace-0466,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,630.71,2.0,2260
+trace-0467,benign_valid,False,False,VALID,628.62,10.12,2236
+trace-0468,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,615.42,2.0,2256
+trace-0469,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,613.75,2.0,2256
+trace-0470,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,625.42,2.12,2240
+trace-0471,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,617.75,2.17,2256
+trace-0472,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,624.33,0.12,2260
+trace-0473,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,708.21,2.17,2240
+trace-0474,benign_valid,False,False,VALID,628.21,12.71,2256
+trace-0475,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,622.96,2.17,2260
+trace-0476,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,616.58,0.17,2240
+trace-0477,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,617.17,0.12,2260
+trace-0478,benign_valid,False,False,VALID,637.96,9.96,2260
+trace-0479,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,649.29,2.12,2240
+trace-0480,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,629.54,0.12,2256
+trace-0481,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,627.83,2.17,2260
+trace-0482,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,636.21,2.12,2240
+trace-0483,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,649.25,1.96,2256
+trace-0484,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,633.38,2.04,2260
+trace-0485,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,630.17,0.08,2240
+trace-0486,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,638.17,0.12,2256
+trace-0487,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,635.08,0.12,2260
+trace-0488,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,896.38,6.0,2240
+trace-0489,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,653.08,2.04,2256
+trace-0490,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,660.04,0.12,2260
+trace-0491,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,653.46,2.29,2236
+trace-0492,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,634.5,3.54,2256
+trace-0493,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,637.92,3.42,2260
+trace-0494,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,638.0,2.12,2240
+trace-0495,benign_valid,False,False,VALID,649.42,9.88,2256
+trace-0496,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,659.42,2.12,2260
+trace-0497,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,653.58,0.12,2240
+trace-0498,benign_valid,False,False,VALID,647.29,9.79,2256
+trace-0499,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,641.29,2.08,2256
+trace-0500,benign_valid,False,False,VALID,647.5,9.58,2240
+trace-0501,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,648.29,2.12,2256
+trace-0502,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,874.12,6.08,2260
+trace-0503,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,814.33,2.25,2244
+trace-0504,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,667.08,0.08,2256
+trace-0505,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,653.33,0.12,2256
+trace-0506,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,682.25,2.04,2240
+trace-0507,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,655.04,0.12,2256
+trace-0508,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,656.21,2.04,2260
+trace-0509,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,664.04,3.62,2240
+trace-0510,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,664.79,0.08,2256
+trace-0511,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,665.54,2.17,2260
+trace-0512,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,692.33,3.67,2336
+trace-0513,benign_valid,False,False,VALID,672.29,10.33,2352
+trace-0514,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,663.83,3.46,2356
+trace-0515,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,810.04,4.42,2336
+trace-0516,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,819.96,0.29,2356
+trace-0517,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,744.25,24.12,2356
+trace-0518,benign_valid,False,False,VALID,825.75,11.92,2336
+trace-0519,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,710.33,0.25,2356
+trace-0520,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,693.79,2.25,2356
+trace-0521,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,700.83,2.12,2336
+trace-0522,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,688.0,2.25,2356
+trace-0523,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,680.54,0.12,2356
+trace-0524,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,691.58,2.21,2336
+trace-0525,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,684.83,3.71,2352
+trace-0526,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,719.08,3.54,2356
+trace-0527,benign_valid,False,False,VALID,725.92,10.54,2336
+trace-0528,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,838.29,4.62,2356
+trace-0529,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,881.75,0.25,2356
+trace-0530,benign_valid,False,False,VALID,798.67,13.46,2336
+trace-0531,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,744.58,0.21,2356
+trace-0532,benign_valid,False,False,VALID,746.96,22.0,2356
+trace-0533,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,832.62,2.38,2336
+trace-0534,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,714.71,3.79,2356
+trace-0535,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,729.79,2.08,2356
+trace-0536,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,696.67,0.12,2336
+trace-0537,benign_valid,False,False,VALID,713.46,10.75,2356
+trace-0538,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,715.96,0.17,2356
+trace-0539,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,697.5,0.12,2336
+trace-0540,benign_valid,False,False,VALID,706.62,10.42,2356
+trace-0541,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,894.67,7.71,2356
+trace-0542,benign_valid,False,False,VALID,826.33,14.75,2336
+trace-0543,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,788.88,4.08,2356
+trace-0544,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,731.08,2.21,2356
+trace-0545,benign_valid,False,False,VALID,726.08,10.42,2336
+trace-0546,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,716.83,2.04,2356
+trace-0547,benign_valid,False,False,VALID,741.67,10.33,2356
+trace-0548,benign_valid,False,False,VALID,745.33,10.42,2336
+trace-0549,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,707.38,0.12,2356
+trace-0550,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,712.33,0.12,2356
+trace-0551,benign_valid,False,False,VALID,704.83,10.58,2336
+trace-0552,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,715.88,2.12,2356
+trace-0553,benign_valid,False,False,VALID,874.71,29.46,2356
+trace-0554,benign_valid,False,False,VALID,844.88,10.71,2340
+trace-0555,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,726.46,0.12,2356
+trace-0556,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,719.83,2.12,2356
+trace-0557,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,721.04,2.0,2336
+trace-0558,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,717.46,0.12,2356
+trace-0559,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,737.54,3.58,2356
+trace-0560,benign_valid,False,False,VALID,750.42,10.17,2336
+trace-0561,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,738.71,3.71,2356
+trace-0562,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,732.62,3.54,2356
+trace-0563,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,810.12,0.12,2340
+trace-0564,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,778.0,4.46,2356
+trace-0565,benign_valid,False,False,VALID,783.33,10.54,2356
+trace-0566,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,994.0,8.04,2336
+trace-0567,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,954.25,6.62,2356
+trace-0568,benign_valid,False,False,VALID,886.25,16.0,2356
+trace-0569,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,874.96,0.12,2336
+trace-0570,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,755.08,0.12,2356
+trace-0571,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,764.0,2.12,2356
+trace-0572,benign_valid,False,False,VALID,814.54,10.79,2336
+trace-0573,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,741.83,0.17,2356
+trace-0574,benign_valid,False,False,VALID,753.83,10.29,2356
+trace-0575,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,749.25,2.21,2336
+trace-0576,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,764.08,2.12,2356
+trace-0577,benign_valid,False,False,VALID,790.75,27.25,2356
+trace-0578,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,992.92,4.79,2336
+trace-0579,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,843.12,2.12,2356
+trace-0580,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,758.62,2.12,2356
+trace-0581,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,795.58,3.62,2336
+trace-0582,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,786.75,2.12,2356
+trace-0583,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,954.96,2.58,2356
+trace-0584,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,828.54,2.33,2336
+trace-0585,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,809.58,2.12,2356
+trace-0586,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,813.25,2.29,2356
+trace-0587,benign_valid,False,False,VALID,804.54,11.42,2336
+trace-0588,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,785.38,3.88,2356
+trace-0589,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,917.71,2.58,2356
+trace-0590,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,802.42,0.12,2340
+trace-0591,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,829.5,2.21,2356
+trace-0592,benign_valid,False,False,VALID,774.58,11.0,2356
+trace-0593,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,776.17,3.58,2336
+trace-0594,benign_valid,False,False,VALID,775.38,10.29,2356
+trace-0595,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,790.67,2.08,2356
+trace-0596,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,802.96,3.5,2336
+trace-0597,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,767.46,0.12,2356
+trace-0598,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,804.25,2.08,2356
+trace-0599,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,776.54,2.08,2336
+trace-0600,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,768.96,0.12,2356
+trace-0601,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,995.21,5.5,2356
+trace-0602,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,998.38,4.08,2340
+trace-0603,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,859.17,2.12,2356
+trace-0604,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,802.04,2.17,2356
+trace-0605,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,782.46,0.08,2336
+trace-0606,benign_valid,False,False,VALID,777.17,10.46,2356
+trace-0607,benign_valid,False,False,VALID,789.25,10.12,2356
+trace-0608,benign_valid,False,False,VALID,812.33,10.88,2336
+trace-0609,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,794.0,2.12,2356
+trace-0610,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,814.75,3.58,2356
+trace-0611,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,793.92,0.08,2340
+trace-0612,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,896.42,2.17,2356
+trace-0613,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,787.08,2.12,2356
+trace-0614,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,812.62,2.17,2336
+trace-0615,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,810.04,0.17,2356
+trace-0616,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,820.79,3.67,2356
+trace-0617,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,831.33,2.12,2340
+trace-0618,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,802.12,3.5,2356
+trace-0619,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,802.88,2.12,2356
+trace-0620,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,802.0,2.12,2340
+trace-0621,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,802.08,2.04,2356
+trace-0622,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,805.29,2.08,2356
+trace-0623,benign_valid,False,False,VALID,815.04,10.42,2336
+trace-0624,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1061.38,4.04,2356
+trace-0625,benign_valid,False,False,VALID,943.92,13.46,2356
+trace-0626,benign_valid,False,False,VALID,979.25,13.12,2336
+trace-0627,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,819.29,3.33,2356
+trace-0628,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,830.62,2.04,2356
+trace-0629,benign_valid,False,False,VALID,812.42,10.08,2336
+trace-0630,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,809.67,2.08,2356
+trace-0631,benign_valid,False,False,VALID,819.62,10.12,2356
+trace-0632,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,807.62,2.08,2336
+trace-0633,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,850.62,3.33,2356
+trace-0634,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,827.5,3.33,2356
+trace-0635,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1047.58,0.38,2336
+trace-0636,benign_valid,False,False,VALID,1004.33,10.88,2356
+trace-0637,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,833.71,3.38,2356
+trace-0638,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,823.25,2.0,2336
+trace-0639,benign_valid,False,False,VALID,825.71,10.21,2352
+trace-0640,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,844.33,2.0,2356
+trace-0641,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,833.04,3.42,2340
+trace-0642,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,871.25,2.08,2356
+trace-0643,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,836.5,3.42,2352
+trace-0644,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,832.62,2.21,2336
+trace-0645,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,858.33,2.04,2356
+trace-0646,benign_valid,False,False,VALID,890.83,10.46,2356
+trace-0647,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,830.12,3.5,2336
+trace-0648,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,832.25,0.12,2356
+trace-0649,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,841.25,0.12,2356
+trace-0650,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,843.79,2.17,2336
+trace-0651,benign_valid,False,False,VALID,857.92,10.25,2356
+trace-0652,benign_valid,False,False,VALID,867.25,10.12,2356
+trace-0653,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,873.67,2.12,2336
+trace-0654,benign_valid,False,False,VALID,885.08,10.21,2356
+trace-0655,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,860.92,2.17,2356
+trace-0656,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,895.08,2.46,2336
+trace-0657,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1016.38,3.79,2356
+trace-0658,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1010.62,0.12,2356
+trace-0659,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,858.67,0.08,2336
+trace-0660,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,892.42,3.92,2356
+trace-0661,benign_valid,False,False,VALID,877.5,10.96,2356
+trace-0662,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,864.0,0.08,2336
+trace-0663,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,937.54,3.62,2356
+trace-0664,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,904.08,3.46,2356
+trace-0665,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,933.08,2.38,2336
+trace-0666,benign_valid,False,False,VALID,886.17,11.25,2356
+trace-0667,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,996.38,4.12,2356
+trace-0668,benign_valid,False,False,VALID,1031.33,13.5,2340
+trace-0669,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1014.04,3.83,2356
+trace-0670,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,880.88,2.17,2356
+trace-0671,benign_valid,False,False,VALID,959.79,13.42,2336
+trace-0672,benign_valid,False,False,VALID,918.92,10.46,2356
+trace-0673,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,888.96,0.08,2356
+trace-0674,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,874.67,2.29,2336
+trace-0675,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,862.42,2.17,2356
+trace-0676,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,867.75,2.04,2356
+trace-0677,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,858.92,2.21,2336
+trace-0678,benign_valid,False,False,VALID,1146.71,15.96,2356
+trace-0679,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1049.75,0.25,2356
+trace-0680,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1016.17,2.33,2336
+trace-0681,benign_valid,False,False,VALID,927.58,10.75,2356
+trace-0682,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,917.83,2.0,2356
+trace-0683,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,906.83,2.08,2336
+trace-0684,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,884.25,3.42,2356
+trace-0685,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,886.5,0.08,2356
+trace-0686,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,929.08,0.08,2340
+trace-0687,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,914.25,2.12,2356
+trace-0688,benign_valid,False,False,VALID,1264.75,18.42,2356
+trace-0689,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1098.12,3.04,2336
+trace-0690,benign_valid,False,False,VALID,935.62,11.54,2356
+trace-0691,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,907.04,2.21,2356
+trace-0692,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,901.0,2.17,2336
+trace-0693,benign_valid,False,False,VALID,888.88,10.71,2356
+trace-0694,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,899.5,0.17,2356
+trace-0695,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,897.38,2.17,2336
+trace-0696,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,908.08,2.12,2356
+trace-0697,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,902.46,2.17,2356
+trace-0698,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1208.92,0.33,2336
+trace-0699,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1012.12,6.0,2356
+trace-0700,benign_valid,False,False,VALID,1015.5,12.04,2356
+trace-0701,benign_valid,False,False,VALID,936.25,10.5,2336
+trace-0702,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,906.04,0.21,2356
+trace-0703,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,933.12,2.08,2356
+trace-0704,benign_valid,False,False,VALID,935.96,10.5,2336
+trace-0705,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,919.58,2.08,2356
+trace-0706,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,913.46,2.08,2356
+trace-0707,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,911.46,0.12,2336
+trace-0708,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1129.33,10.67,2356
+trace-0709,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1059.21,2.33,2356
+trace-0710,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1069.75,3.92,2336
+trace-0711,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,954.33,2.12,2352
+trace-0712,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,942.71,2.33,2356
+trace-0713,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,2382.5,3.88,2340
+trace-0714,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,969.5,2.33,2356
+trace-0715,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,939.58,2.12,2356
+trace-0716,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1157.42,4.12,2336
+trace-0717,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1111.71,3.58,2356
+trace-0718,benign_valid,False,False,VALID,1066.42,14.38,2356
+trace-0719,benign_valid,False,False,VALID,1069.71,15.58,2336
+trace-0720,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1094.71,4.75,2356
+trace-0721,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,954.12,0.17,2356
+trace-0722,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,935.71,3.96,2336
+trace-0723,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,938.12,0.21,2356
+trace-0724,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,946.46,0.17,2356
+trace-0725,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1134.62,3.96,2340
+trace-0726,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1147.21,5.83,2356
+trace-0727,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1117.25,4.12,2356
+trace-0728,benign_valid,False,False,VALID,957.04,11.25,2336
+trace-0729,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,942.79,0.12,2356
+trace-0730,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,948.0,3.54,2352
+trace-0731,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,949.38,3.54,2340
+trace-0732,benign_valid,False,False,VALID,951.08,35.33,2356
+trace-0733,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,954.79,2.17,2356
+trace-0734,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,943.33,2.25,2336
+trace-0735,benign_valid,False,False,VALID,1226.92,23.08,2356
+trace-0736,benign_valid,False,False,VALID,1167.88,15.0,2356
+trace-0737,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1034.12,2.88,2340
+trace-0738,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1135.75,0.12,2356
+trace-0739,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,976.71,0.12,2356
+trace-0740,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,969.25,0.17,2336
+trace-0741,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,960.83,3.54,2352
+trace-0742,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,955.62,0.08,2352
+trace-0743,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,968.29,0.08,2336
+trace-0744,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1231.08,0.25,2356
+trace-0745,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1058.17,5.54,2356
+trace-0746,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1121.71,4.21,2336
+trace-0747,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,999.88,3.58,2356
+trace-0748,benign_valid,False,False,VALID,997.42,10.75,2356
+trace-0749,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,974.96,3.42,2336
+trace-0750,benign_valid,False,False,VALID,970.92,10.04,2356
+trace-0751,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,974.83,3.29,2356
+trace-0752,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,973.25,2.08,2336
+trace-0753,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1119.17,0.12,2356
+trace-0754,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1174.0,2.21,2356
+trace-0755,benign_valid,False,False,VALID,993.62,10.38,2336
+trace-0756,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,993.46,2.08,2352
+trace-0757,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,973.21,2.12,2356
+trace-0758,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,978.08,0.08,2336
+trace-0759,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,972.71,0.08,2356
+trace-0760,benign_valid,False,False,VALID,977.25,10.25,2356
+trace-0761,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,975.79,2.21,2336
+trace-0762,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,974.79,4.0,2356
+trace-0763,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1164.75,0.12,2356
+trace-0764,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1179.58,0.25,2336
+trace-0765,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1265.38,4.29,2356
+trace-0766,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1402.25,0.33,2356
+trace-0767,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1272.67,7.46,2340
+trace-0768,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1096.12,0.21,2356
+trace-0769,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1065.92,0.08,2360
+trace-0770,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1063.54,2.29,2336
+trace-0771,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1300.29,0.33,2352
+trace-0772,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1174.29,5.79,2356
+trace-0773,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1047.54,0.21,2336
+trace-0774,benign_valid,False,False,VALID,1032.62,11.92,2356
+trace-0775,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1104.79,2.29,2356
+trace-0776,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1022.38,2.17,2336
+trace-0777,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1062.54,2.29,2356
+trace-0778,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1041.0,0.21,2356
+trace-0779,benign_valid,False,False,VALID,1023.75,12.08,2340
+trace-0780,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1203.96,3.75,2356
+trace-0781,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1019.54,2.17,2356
+trace-0782,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1019.58,2.17,2336
+trace-0783,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1054.29,2.12,2356
+trace-0784,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1036.0,0.17,2356
+trace-0785,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1170.42,4.67,2336
+trace-0786,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1055.83,3.42,2356
+trace-0787,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1036.21,3.5,2356
+trace-0788,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1017.92,2.25,2336
+trace-0789,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1310.17,4.21,2356
+trace-0790,benign_valid,False,False,VALID,1218.0,17.21,2356
+trace-0791,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1227.46,3.79,2336
+trace-0792,benign_valid,False,False,VALID,1167.42,12.67,2356
+trace-0793,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1108.83,2.88,2356
+trace-0794,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1255.0,4.58,2336
+trace-0795,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1053.67,2.21,2356
+trace-0796,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1047.75,2.25,2356
+trace-0797,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1289.04,0.33,2336
+trace-0798,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1268.17,0.17,2356
+trace-0799,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1111.92,2.25,2352
+trace-0800,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1152.54,0.17,2336
+trace-0801,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1103.12,4.12,2352
+trace-0802,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1065.08,2.21,2356
+trace-0803,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1064.58,3.75,2336
+trace-0804,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1053.33,0.12,2356
+trace-0805,benign_valid,False,False,VALID,1053.21,11.17,2356
+trace-0806,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1344.42,3.67,2336
+trace-0807,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1205.04,10.29,2352
+trace-0808,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1278.92,2.33,2356
+trace-0809,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1097.67,2.25,2340
+trace-0810,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1121.88,2.21,2356
+trace-0811,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1056.83,3.75,2356
+trace-0812,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1046.88,3.62,2336
+trace-0813,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1064.0,2.08,2356
+trace-0814,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1218.12,4.12,2356
+trace-0815,benign_valid,False,False,VALID,1212.88,11.46,2340
+trace-0816,benign_valid,False,False,VALID,1105.71,10.96,2356
+trace-0817,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1148.88,2.5,2356
+trace-0818,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1067.21,2.25,2340
+trace-0819,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1091.08,4.04,2356
+trace-0820,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1107.79,2.33,2356
+trace-0821,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1090.62,3.62,2336
+trace-0822,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1075.33,3.62,2356
+trace-0823,benign_valid,False,False,VALID,1242.62,10.75,2356
+trace-0824,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1166.79,2.12,2336
+trace-0825,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1078.17,2.17,2352
+trace-0826,benign_valid,False,False,VALID,1081.88,10.42,2356
+trace-0827,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1074.33,2.12,2336
+trace-0828,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1067.46,2.08,2356
+trace-0829,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1076.29,3.54,2356
+trace-0830,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1092.54,2.21,2336
+trace-0831,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1224.25,0.29,2356
+trace-0832,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1253.12,0.12,2360
+trace-0833,benign_valid,False,False,VALID,1098.62,10.58,2336
+trace-0834,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1086.21,0.17,2356
+trace-0835,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1090.83,2.17,2356
+trace-0836,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1084.21,0.08,2336
+trace-0837,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1114.79,0.08,2356
+trace-0838,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1111.54,2.17,2356
+trace-0839,benign_valid,False,False,VALID,1081.38,10.5,2336
+trace-0840,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1353.0,0.12,2352
+trace-0841,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1257.46,2.96,2356
+trace-0842,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1166.08,2.62,2340
+trace-0843,benign_valid,False,False,VALID,1266.04,10.83,2356
+trace-0844,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1148.21,0.12,2356
+trace-0845,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1099.17,3.58,2336
+trace-0846,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1100.58,2.21,2352
+trace-0847,benign_valid,False,False,VALID,1103.58,10.25,2356
+trace-0848,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1324.0,0.29,2336
+trace-0849,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1236.5,3.08,2356
+trace-0850,benign_valid,False,False,VALID,1362.54,10.75,2356
+trace-0851,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1193.79,2.04,2336
+trace-0852,benign_valid,False,False,VALID,1110.21,10.38,2356
+trace-0853,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1103.08,2.17,2356
+trace-0854,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1146.75,0.12,2336
+trace-0855,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1124.92,2.08,2356
+trace-0856,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1441.29,10.71,2356
+trace-0857,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1307.25,3.96,2340
+trace-0858,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1137.0,2.04,2356
+trace-0859,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1126.58,3.54,2356
+trace-0860,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1114.79,2.25,2336
+trace-0861,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1132.04,0.12,2356
+trace-0862,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1167.12,2.12,2352
+trace-0863,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1130.67,0.12,2336
+trace-0864,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1334.0,0.25,2356
+trace-0865,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1302.54,3.67,2360
+trace-0866,benign_valid,False,False,VALID,1244.92,13.75,2340
+trace-0867,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1292.67,2.83,2356
+trace-0868,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1275.12,2.79,2356
+trace-0869,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1293.21,7.67,2336
+trace-0870,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1326.21,2.29,2352
+trace-0871,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1156.67,2.17,2356
+trace-0872,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1354.33,2.79,2336
+trace-0873,benign_valid,False,False,VALID,1231.12,11.12,2356
+trace-0874,benign_valid,False,False,VALID,1182.42,10.62,2356
+trace-0875,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1146.71,3.62,2336
+trace-0876,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1140.46,2.12,2356
+trace-0877,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1147.75,2.0,2356
+trace-0878,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1144.88,0.17,2336
+trace-0879,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1142.38,0.17,2356
+trace-0880,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1395.08,4.42,2356
+trace-0881,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1435.38,0.04,2340
+trace-0882,benign_valid,False,False,VALID,1221.04,11.75,2356
+trace-0883,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1156.96,2.12,2356
+trace-0884,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1150.62,2.21,2340
+trace-0885,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1152.0,0.08,2356
+trace-0886,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1150.71,0.08,2356
+trace-0887,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1174.17,0.08,2336
+trace-0888,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1376.62,2.5,2356
+trace-0889,benign_valid,False,False,VALID,1196.88,10.71,2356
+trace-0890,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1206.67,2.25,2336
+trace-0891,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1166.21,0.12,2356
+trace-0892,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1162.12,2.29,2352
+trace-0893,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1191.0,2.25,2336
+trace-0894,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1219.17,2.62,2356
+trace-0895,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1234.62,0.08,2356
+trace-0896,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1463.33,2.96,2340
+trace-0897,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1270.96,0.12,2356
+trace-0898,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1277.71,2.88,2356
+trace-0899,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1259.33,0.08,2336
+trace-0900,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1220.67,2.42,2352
+trace-0901,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1232.46,4.21,2356
+trace-0902,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1893.88,8.21,2336
+trace-0903,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1569.38,0.29,2356
+trace-0904,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1301.71,5.5,2356
+trace-0905,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1265.96,4.58,2336
+trace-0906,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1218.67,2.21,2352
+trace-0907,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1238.33,2.38,2356
+trace-0908,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1254.38,2.46,2336
+trace-0909,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1546.67,0.17,2356
+trace-0910,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1464.46,9.08,2356
+trace-0911,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1428.38,4.08,2340
+trace-0912,benign_valid,False,False,VALID,1449.08,16.38,2356
+trace-0913,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1318.71,4.25,2356
+trace-0914,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1269.83,2.33,2336
+trace-0915,benign_valid,False,False,VALID,1248.71,11.42,2356
+trace-0916,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1224.62,0.21,2356
+trace-0917,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1351.46,3.58,2336
+trace-0918,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1352.67,7.29,2356
+trace-0919,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1373.0,3.04,2356
+trace-0920,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1903.04,0.33,2340
+trace-0921,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1321.96,0.17,2356
+trace-0922,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1400.62,0.21,2356
+trace-0923,benign_valid,False,False,VALID,1393.58,18.38,2340
+trace-0924,benign_valid,False,False,VALID,2173.62,93.46,2356
+trace-0925,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1932.67,3.62,2356
+trace-0926,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1341.92,2.96,2340
+trace-0927,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1303.12,4.58,2352
+trace-0928,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1272.83,0.25,2356
+trace-0929,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1228.71,2.25,2336
+trace-0930,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1764.46,14.0,2352
+trace-0931,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1422.46,0.25,2360
+trace-0932,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1435.17,3.75,2336
+trace-0933,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1259.71,2.38,2356
+trace-0934,benign_valid,False,False,VALID,1243.54,11.83,2356
+trace-0935,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1227.29,2.29,2336
+trace-0936,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1253.58,3.92,2356
+trace-0937,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1238.5,0.17,2356
+trace-0938,benign_valid,False,False,VALID,1237.5,11.21,2336
+trace-0939,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1264.12,0.21,2356
+trace-0940,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1243.79,0.12,2356
+trace-0941,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1223.79,2.21,2336
+trace-0942,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1264.42,2.5,2352
+trace-0943,benign_valid,False,False,VALID,1272.08,10.96,2356
+trace-0944,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1243.25,0.17,2336
+trace-0945,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1231.62,0.08,2356
+trace-0946,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1513.04,4.38,2356
+trace-0947,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1403.42,2.79,2340
+trace-0948,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1517.38,7.79,2352
+trace-0949,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1483.29,0.25,2356
+trace-0950,benign_valid,False,False,VALID,1385.88,14.25,2340
+trace-0951,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1281.08,2.38,2356
+trace-0952,benign_valid,False,False,VALID,1282.58,11.21,2356
+trace-0953,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1470.88,6.79,2336
+trace-0954,benign_valid,False,False,VALID,1394.58,12.5,2356
+trace-0955,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1284.92,0.12,2356
+trace-0956,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1323.62,4.5,2340
+trace-0957,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1388.58,0.12,2352
+trace-0958,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1282.5,4.21,2356
+trace-0959,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1274.12,0.08,2336
+trace-0960,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1300.33,2.25,2356
+trace-0961,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1261.04,2.29,2356
+trace-0962,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1255.67,3.71,2336
+trace-0963,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1249.08,3.5,2352
+trace-0964,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1262.29,0.12,2356
+trace-0965,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1258.88,2.21,2336
+trace-0966,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1253.12,3.71,2356
+trace-0967,benign_valid,False,False,VALID,1248.04,11.46,2356
+trace-0968,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1460.88,8.33,2336
+trace-0969,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1468.62,6.71,2356
+trace-0970,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1316.42,4.67,2356
+trace-0971,benign_valid,False,False,VALID,1313.96,11.96,2336
+trace-0972,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1553.33,0.33,2352
+trace-0973,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1373.67,5.21,2356
+trace-0974,benign_valid,False,False,VALID,1287.46,12.0,2336
+trace-0975,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1518.08,6.08,2356
+trace-0976,benign_valid,False,False,VALID,1344.96,12.0,2352
+trace-0977,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1310.83,0.21,2336
+trace-0978,benign_valid,False,False,VALID,1321.67,11.5,2352
+trace-0979,benign_valid,False,False,VALID,1357.5,10.88,2356
+trace-0980,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1284.67,2.29,2336
+trace-0981,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1272.33,0.12,2356
+trace-0982,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1418.5,8.67,2356
+trace-0983,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1436.42,2.71,2336
+trace-0984,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1515.33,2.42,2356
+trace-0985,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1321.08,2.42,2356
+trace-0986,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1328.58,0.12,2336
+trace-0987,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1399.12,0.12,2356
+trace-0988,benign_valid,False,False,VALID,1357.67,12.5,2356
+trace-0989,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1539.67,4.83,2340
+trace-0990,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1342.46,2.17,2356
+trace-0991,untrusted_key_forgery,True,True,UntrustedNotaryKey: rogue-compromised-key-999,1301.96,0.17,2356
+trace-0992,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1336.21,3.71,2336
+trace-0993,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1294.46,2.12,2356
+trace-0994,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1303.0,3.67,2356
+trace-0995,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1297.92,2.21,2336
+trace-0996,benign_valid,False,False,VALID,1428.25,11.75,2356
+trace-0997,tampered_parameter_escalation,True,True,ParameterBindingMismatch: Executed tool arguments do not match notarized leaf,1353.08,3.92,2356
+trace-0998,replay_clock_desync,True,True,SignatureMismatch: Tampered voucher signature or metadata,1315.62,2.21,2336
+trace-0999,tampered_signature,True,True,SignatureMismatch: Tampered voucher signature or metadata,1302.5,2.29,2356
