@@ -45,19 +45,99 @@ class PublicNotaryVerifier:
     High-performance public verifier designed to run inside API gateways,
     sidecar proxies (Envoy / gRPC interceptors), or destination tool servers.
     Validates cryptographic authenticity without accessing internal LLM context.
+    Implements a bounded 2^20-slot associative lookup + circular FIFO eviction ring
+    replay cache with IN_FLIGHT execution leases (Delta_{exec_lease} = 30 s).
     """
 
-    def __init__(self, trusted_notary_public_keys: Dict[str, bytes]):
+    DEFAULT_RING_SLOTS = 1 << 20
+    EXEC_LEASE_NS = 30_000_000_000  # 30 seconds bounded execution lease
+
+    def __init__(
+        self,
+        trusted_notary_public_keys: Dict[str, bytes],
+        replay_ring_capacity: int = DEFAULT_RING_SLOTS,
+    ):
         """
         trusted_notary_public_keys: mapping of key_id -> public/shared verification key
         """
         self.trusted_keys = trusted_notary_public_keys
+        self.replay_ring_capacity = max(1, replay_ring_capacity)
+        self._replay_index: Dict[str, Dict[str, Any]] = {}
+        self._replay_fifo_ring: List[Optional[str]] = [None] * min(self.replay_ring_capacity, 4096)
+        self._ring_cursor: int = 0
+
+    def check_and_reserve_replay_slot(
+        self,
+        voucher_id: str,
+        now_ns: Optional[int] = None,
+        exec_lease_ns: int = EXEC_LEASE_NS,
+    ) -> Tuple[bool, str]:
+        """
+        O(1) associative lookup + circular FIFO ring reservation.
+        Transitions expired IN_FLIGHT leases (> exec_lease_ns) to ABORTED_EVICTED.
+        Returns (allowed, status_or_error).
+        """
+        ts = now_ns if now_ns is not None else time.time_ns()
+        existing = self._replay_index.get(voucher_id)
+        if existing is not None:
+            state = existing["state"]
+            if state == "IN_FLIGHT" and (ts - existing["reserved_at_ns"]) > exec_lease_ns:
+                existing["state"] = "ABORTED_EVICTED"
+                state = "ABORTED_EVICTED"
+            if state in ("COMMITTED", "IN_FLIGHT", "ABORTED_EVICTED"):
+                return False, f"ReplayDetected: Voucher {voucher_id} already in state {state}"
+
+        # Evict oldest slot in circular FIFO ring if occupied
+        ring_len = len(self._replay_fifo_ring)
+        evicted_vid = self._replay_fifo_ring[self._ring_cursor]
+        if evicted_vid is not None and evicted_vid in self._replay_index:
+            del self._replay_index[evicted_vid]
+
+        self._replay_fifo_ring[self._ring_cursor] = voucher_id
+        self._ring_cursor = (self._ring_cursor + 1) % ring_len
+        self._replay_index[voucher_id] = {
+            "state": "IN_FLIGHT",
+            "reserved_at_ns": ts,
+            "response_digest": None,
+        }
+        return True, "IN_FLIGHT"
+
+    def finalize_replay_slot(
+        self,
+        voucher_id: str,
+        committed: bool = True,
+        response_digest: Optional[str] = None,
+    ) -> str:
+        """Transitions an IN_FLIGHT slot to COMMITTED or ABORTED_EVICTED."""
+        entry = self._replay_index.get(voucher_id)
+        if entry is None:
+            return "NOT_SEEN"
+        if committed:
+            entry["state"] = "COMMITTED"
+            entry["response_digest"] = response_digest
+        else:
+            entry["state"] = "ABORTED_EVICTED"
+        return entry["state"]
+
+    def query_replay_status(self, voucher_id: str, now_ns: Optional[int] = None) -> str:
+        """
+        Returns signed status inquiry state ('COMMITTED', 'IN_FLIGHT', 'ABORTED_EVICTED', or 'NOT_SEEN')
+        for caller timeout reconciliation and session-accumulator rollback verification.
+        """
+        ts = now_ns if now_ns is not None else time.time_ns()
+        entry = self._replay_index.get(voucher_id)
+        if entry is None:
+            return "NOT_SEEN"
+        if entry["state"] == "IN_FLIGHT" and (ts - entry["reserved_at_ns"]) > self.EXEC_LEASE_NS:
+            entry["state"] = "ABORTED_EVICTED"
+        return entry["state"]
 
     def verify_voucher(
         self,
         voucher: ZKActorVoucher,
         target_tool_params_hash: str,
-        max_clock_skew_ns: int = 300_000_000_000  # 5 minutes TTL
+        max_clock_skew_ns: int = 300_000_000_000,  # 5 minutes TTL
+        enforce_replay_cache: bool = False,
     ) -> VoucherVerificationResult:
         """
         Verifies all cryptographic invariants:
@@ -102,6 +182,16 @@ class PublicNotaryVerifier:
                 error_reason="ExpiredVoucher: Timestamp exceeds allowable clock skew"
             )
 
+        if enforce_replay_cache:
+            allowed, replay_msg = self.check_and_reserve_replay_slot(voucher.voucher_id, now_ns=current_ns)
+            if not allowed:
+                elapsed_us = (time.perf_counter_ns() - start_ns) / 1000.0
+                return VoucherVerificationResult(
+                    is_valid=False,
+                    verification_latency_us=elapsed_us,
+                    error_reason=replay_msg
+                )
+
         # Step 4: Parameter Binding Invariant
         proof_id_concat = ",".join([p.proof_id for p in voucher.zk_proofs])
         expected_leaf_hash = compute_action_node_hash(
@@ -115,6 +205,8 @@ class PublicNotaryVerifier:
             zk_proof_id=proof_id_concat
         )
         if not hmac.compare_digest(expected_leaf_hash, voucher.action_leaf_hash):
+            if enforce_replay_cache:
+                self.finalize_replay_slot(voucher.voucher_id, committed=False)
             elapsed_us = (time.perf_counter_ns() - start_ns) / 1000.0
             return VoucherVerificationResult(
                 is_valid=False,
@@ -129,6 +221,8 @@ class PublicNotaryVerifier:
             expected_root=voucher.root_merkle_hash
         )
         if not merkle_valid:
+            if enforce_replay_cache:
+                self.finalize_replay_slot(voucher.voucher_id, committed=False)
             elapsed_us = (time.perf_counter_ns() - start_ns) / 1000.0
             return VoucherVerificationResult(
                 is_valid=False,
@@ -141,12 +235,17 @@ class PublicNotaryVerifier:
             transcript = f"{proof.circuit_commitment}:{proof.public_inputs_hash}:{proof.blinded_eval_token}"
             expected_proof_hex = hmac_sha256_hex(pubkey, transcript)
             if not hmac.compare_digest(expected_proof_hex, proof.zk_proof_hex):
+                if enforce_replay_cache:
+                    self.finalize_replay_slot(voucher.voucher_id, committed=False)
                 elapsed_us = (time.perf_counter_ns() - start_ns) / 1000.0
                 return VoucherVerificationResult(
                     is_valid=False,
                     verification_latency_us=elapsed_us,
                     error_reason=f"ZKProofInvalid: Invariant proof {proof.proof_id} failed verification"
                 )
+
+        if enforce_replay_cache:
+            self.finalize_replay_slot(voucher.voucher_id, committed=True)
 
         elapsed_us = (time.perf_counter_ns() - start_ns) / 1000.0
         return VoucherVerificationResult(

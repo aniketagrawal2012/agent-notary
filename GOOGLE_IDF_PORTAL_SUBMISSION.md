@@ -18,24 +18,32 @@
 
 ---
 
+## Plain-Prose Single-Paragraph Abstract (For Research Hub `http://rh/` & `go/pubtools`)
+
+```text
+Multi-agent workflows coordinated across enterprise orchestration platforms and the Model Context Protocol (MCP) increasingly execute state-mutating operations across external databases, financial settlement APIs, and cloud infrastructure. However, existing agent runtimes lack cryptographic action provenance and non-repudiation across service boundaries: when a sub-agent executes a tool invocation induced by an indirect prompt injection or reasoning error, standard telemetry frameworks record only mutable, unauthenticated text logs that can be modified or omitted by compromised components, while external compliance audits require verifying policy invariants without exposing confidential customer context or raw prompt tokens. We present Agent-Notary, a low-latency cryptographic attestation and non-repudiation framework for distributed multi-agent workflows. Agent-Notary introduces three mechanisms: (1) an append-only Causal Merkle-DAG that binds multi-agent request and completion vertices, tool calls, and Lamport timestamps into an immutable chain of custody without retroactive digest mutation; (2) a Dual-Tier Blinded Policy-Invariant Attestation Engine that pairs microsecond intra-cluster HKDF-blinded enclave witness tokens on the hot path with hardware-attested Confidential VM commitment equivalence and asynchronous Ristretto255 Pedersen commitments with Fiat-Shamir Bulletproof range and predicate transcripts for third-party auditability without disclosing sensitive parameters; and (3) a wire-level Zero-Knowledge Action Attestation Voucher (ZKA-Voucher) carried in standard HTTP/2 and gRPC transport headers. Empirical evaluation across 1,000 wire/replay tamper traces and 300 multi-agent indirect prompt-injection traces demonstrates 100% detection of wire tampering, signature forgery, replay desynchronization, and out-of-policy tool calls, 100% post-hoc causal attribution of in-policy semantic hijacking, a mean intra-cluster verification latency of 4.17 microseconds (p50: 2.29 microseconds, p99: 21.96 microseconds), and a wire header footprint of 2,250 bytes.
+```
+
+---
+
 ## Screen 2: Problem Statement & Existing State of the Art
 ### The Technical Problem
-Enterprise adoption of autonomous multi-agent systems (e.g., Vertex AI Agent Builder, Model Context Protocol) allows LLM swarms to autonomously execute high-consequence mutations (financial payments, cloud resource modifications, database transactions).
+Enterprise adoption of multi-agent workflows (e.g., Vertex AI Agent Builder, Model Context Protocol) allows LLM agents to execute state-mutating operations across financial payments, cloud resource management, and database transactions.
 
-However, modern agent architectures operate in a **Provenance and Non-Repudiation Void**:
+However, existing agent orchestration runtimes lack **cryptographic action provenance and non-repudiation across service boundaries**:
 1. **Unauthenticated Mutable Telemetry:** Existing logging frameworks (OpenTelemetry, AWS CloudTrail, database audit tables) record mutable, unauthenticated textual JSON strings. Compromised sub-agents or malicious internal actors can forge, modify, or repudiate actions without detection.
-2. **Causal Disconnection in Swarms:** In asynchronous multi-agent workflows, tool calls lack causal ordering. Forensics cannot cryptographically prove which upstream agent prompt or delegation induced a downstream unauthorized action.
-3. **The Auditability vs. Privacy Paradox:** Regulatory frameworks (SOX, HIPAA, GDPR) demand proof that agent tool invocations adhered to safety invariants (e.g., transaction limits, sanitized destination buckets). However, sharing raw prompt logs with external auditors leaks proprietary system prompts, model reasoning chains, and sensitive customer PII.
+2. **Causal Disconnection in Multi-Agent Workflows:** In asynchronous multi-agent workflows, tool calls lack cryptographic causal ordering. Forensics cannot cryptographically prove which upstream agent prompt or delegation induced a downstream unauthorized action.
+3. **Auditability Under Confidentiality Constraints:** Regulatory frameworks (SOX, HIPAA, GDPR) require verification that agent tool invocations adhered to safety invariants (e.g., transaction limits, sanitized destination buckets). However, sharing raw prompt logs with external auditors exposes proprietary system prompts, model reasoning chains, and sensitive customer PII.
 
 ---
 
 ## Screen 3: Novel Technical Solution (The Invention)
-Agent-Notary introduces a line-rate, hardware-speed cryptographic attestation framework deployed at the network boundary between agent swarms and tool APIs:
+Agent-Notary introduces a low-latency cryptographic attestation framework deployed inside hardware-attested Confidential VM enclave boundaries at the network boundary between agent workflows and tool APIs:
 
-1. **Causal Merkle-DAG:** A cryptographically authenticated directed acyclic graph that couples Lamport logical clocks with parent action commitments. Any tampering with past tool parameters breaks the Merkle root with probability $1 - 2^{-256}$.
-2. **Zero-Knowledge Invariant Proving Engine:** Compiles declarative enterprise access policies into succinct cryptographic proofs. Mathematically certifies that private parameters satisfied execution constraints without disclosing prompt tokens or customer PII.
-3. **Zero-Knowledge Action Attestation Voucher (ZKA-Voucher):** A compact, Base64-encoded wire token injected into standard HTTP/2 gRPC metadata headers and MCP JSON-RPC frames (`x-agent-notary-voucher`).
-4. **Line-Rate Public Verifier:** Embedded inside API gateways or sidecars to verify vouchers in sub-$5\,\mu\text{s}$ time prior to tool execution.
+1. **Append-Only Two-Phase Causal Merkle-DAG ($v_i^{\text{req}} \to v_i^{\text{resp}}$):** A cryptographically authenticated directed acyclic graph that couples Lamport logical clocks with domain-separated ($\mathtt{0x00}$--$\mathtt{0x12}$) parent action commitments and exact RFC 6962 frontier folding. Any tampering with past tool parameters breaks the Merkle root with probability $1 - 2^{-256}$.
+2. **Dual-Tier Blinded Policy-Invariant Proving Engine:** Pairs microsecond intra-cluster HKDF-blinded enclave witness tokens on the hot path with asynchronous Ristretto255 Pedersen commitments and Fiat-Shamir Bulletproof range and R1CS set-membership transcripts for third-party auditability without disclosing prompt tokens or customer PII.
+3. **Zero-Knowledge Action Attestation Voucher (ZKA-Voucher):** A compact, Base64-encoded wire token ($2{,}250\,\text{bytes}$) injected into standard HTTP/2 gRPC metadata headers and MCP JSON-RPC frames (`x-agent-notary-voucher`).
+4. **Line-Rate Verifier:** Embedded inside destination tool-server enclaves or sidecars to verify vouchers in sub-$5\,\mu\text{s}$ mean latency ($4.17\,\mu\text{s}$ mean, $2.29\,\mu\text{s}$ p50) prior to tool execution.
 
 ---
 
