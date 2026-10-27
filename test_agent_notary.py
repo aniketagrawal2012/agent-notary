@@ -241,9 +241,17 @@ class TestAgentNotary(unittest.TestCase):
 
         # Valid compensating rollback with NOT_SEEN receipt restores C1 commitment
         c_restored = prover.compensate_aborted_session_step(
-            sess, aborted_amount=5000, aborted_blinding=222, verifier_status_receipt="NOT_SEEN"
+            sess, aborted_amount=5000, aborted_blinding=222,
+            verifier_status_receipt="NOT_SEEN", request_vertex_id="vchr-step-2"
         )
         self.assertEqual(c_restored, c1)
+
+        # Replaying the same rollback receipt for the same request_vertex_id is rejected (at-most-once rollback)
+        with self.assertRaises(ValueError):
+            prover.compensate_aborted_session_step(
+                sess, aborted_amount=5000, aborted_blinding=222,
+                verifier_status_receipt="NOT_SEEN", request_vertex_id="vchr-step-2"
+            )
 
     def test_replay_cache_ring_and_lease_states(self):
         """Test 2^20 associative + FIFO ring replay cache and IN_FLIGHT lease expiration."""

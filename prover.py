@@ -38,6 +38,7 @@ class ZKInvariantProver:
         self._session_accum_val: Dict[str, int] = {}
         self._session_accum_blind: Dict[str, int] = {}
         self._session_accum_commitment: Dict[str, int] = {}
+        self._rolled_back_request_ids: Dict[str, set[str]] = {}
 
     @staticmethod
     def scale_fixed_point(theta_val: float, exponent_s_k: int = 2) -> int:
@@ -115,16 +116,26 @@ class ZKInvariantProver:
         aborted_amount: int,
         aborted_blinding: int,
         verifier_status_receipt: Optional[str] = "NOT_SEEN",
+        request_vertex_id: Optional[str] = None,
     ) -> int:
         """
         Releases reserved cumulative spend in C_{A_i} when a tool call fails or aborts upon v_i^resp
         by multiplying by the inverse commitment C_rollback = g^{-theta} h^{-r} mod p.
-        Requires a verifier-signed execution-error or NOT_SEEN timeout status inquiry receipt.
+        Requires a verifier-signed execution-error, NOT_SEEN timeout status inquiry receipt,
+        or LEASE_EXPIRED_WITNESS (for prolonged verifier outages after TTL + exec_lease expiry),
+        and enforces at-most-once rollback per unique request_vertex_id.
         """
-        if verifier_status_receipt not in ("EXECUTION_ERROR", "NOT_SEEN", None):
+        if verifier_status_receipt not in ("EXECUTION_ERROR", "NOT_SEEN", "LEASE_EXPIRED_WITNESS", None):
             raise ValueError(
                 f"UnauthorizedQuotaRollback: Cannot release session quota with receipt '{verifier_status_receipt}'"
             )
+        if request_vertex_id is not None:
+            rolled_set = self._rolled_back_request_ids.setdefault(session_id, set())
+            if request_vertex_id in rolled_set:
+                raise ValueError(
+                    f"DuplicateRollbackReplay: Request vertex '{request_vertex_id}' already rolled back"
+                )
+            rolled_set.add(request_vertex_id)
         step_comm = self.pedersen_commit(aborted_amount, aborted_blinding)
         rollback_comm = self.pedersen_commit(-aborted_amount, -aborted_blinding)
         assert self.verify_zero_knowledge_rollback(step_comm, rollback_comm), (
